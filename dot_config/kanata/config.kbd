@@ -1,0 +1,43 @@
+;; Global configuration options
+(defcfg
+    process-unmapped-keys yes
+    log-layer-changes no
+)
+
+;; Define keys that will be modified (all keys still processed)
+(defsrc
+    bspc
+    y u p [
+    j k l ;
+    n
+    ralt
+)
+
+;; Values used by multiple changes
+(defvar
+    tap-time 200
+    hold-time 250
+)
+
+;; Remapping between physical keys and functionality
+(defalias
+    ralt (tap-hold-press $tap-time $hold-time _ (layer-toggle vim))
+)
+
+;; Default/base layer modifications (always active)
+(deflayer default
+    bspc
+    y u p [
+    j k l ;
+    n
+    @ralt
+)
+
+;; Layer activated by holding `ralt`
+(deflayer vim
+    del
+    j l ; \
+    left down up right
+    k
+    @ralt
+)
