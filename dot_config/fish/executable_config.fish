@@ -279,3 +279,4 @@ alias einit="nvim \"$HOME/.config/nvim/init.lua\""
 
 alias duckcaddy="sudo \"$HOME/.local/bin/caddy\""
 alias kana="sudo kanata -c \"$HOME/.config/kanata/config.kbd\""
+alias rofi-drun="rofi -show drun -theme $HOME/.local/share/rofi/themes/rounded-nord-dark.rasi -show-icons -icon-theme \"Papirus-Dark\""
