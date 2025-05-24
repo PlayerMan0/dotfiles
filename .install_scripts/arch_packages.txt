@@ -1,0 +1,10 @@
+alacritty
+fish
+kanata
+mpv
+neovim
+papirus-icon-theme
+rofi-calc
+rofi-lbonn-wayland-git
+starship
+wallust
