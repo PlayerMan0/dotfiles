@@ -10,13 +10,9 @@ if [[ -e $package_list ]]; then
     packages="$(cat $package_list)"
 
     if command -v "paru" &> /dev/null; then
-        for package in $packages; do
-            paru -Sy --noconfirm $package
-        done
+        paru -Sy --needed --noconfirm $packages
     elif command -v "yay"  &> /dev/null; then
-        for package in $packages; do
-            yay -Sy --noconfirm $package
-        done
+        yay -Sy --needed --noconfirm $packages
     else
         error_heading
         echo "No AUR package manager found!"
