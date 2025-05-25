@@ -279,4 +279,7 @@ alias einit="nvim \"$HOME/.config/nvim/init.lua\""
 
 alias duckcaddy="sudo \"$HOME/.local/bin/caddy\""
 alias kana="sudo kanata -c \"$HOME/.config/kanata/config.kbd\""
-alias rofi-drun="rofi -show drun -theme $HOME/.local/share/rofi/themes/rounded-nord-dark.rasi -show-icons -icon-theme \"Papirus-Dark\""
+alias rofi-drun="rofi -show drun -theme \"$HOME/.local/share/rofi/themes/rounded-nord-dark.rasi\" -show-icons -icon-theme \"Papirus-Dark\""
+alias rofi-calc="rofi -show calc -theme \"$HOME/.local/share/rofi/themes/rounded-nord-dark.rasi\""
+alias rofi-emoji="rofi -show emoji -theme \"$HOME/.local/share/rofi/themes/rounded-nord-dark.rasi\""
+alias rofi-power="rofi -show p -modi \"p:rofi-power-menu\" -theme \"$HOME/.local/share/rofi/themes/rounded-nord-dark.rasi\""
