@@ -3,7 +3,7 @@
     # Commands to run in interactive sessions can go here
 #end
 
-set WALLPAPER "$HOME/Pictures/wallpapers/.extra/misaki_upscaled.png"
+set WALLPAPER "$HOME/Pictures/wallpapers/blue/upscaled/BG_UpperOffice_Night_upscaled.png"
 
 set -g fish_greeting "" # Disable greeting
 
